@@ -47,3 +47,18 @@ def create_folder(dirname):
         os.makedirs(dirname)
     else:
         print(f"File path --> '{dirname}' already exists")
+
+
+def save_as_csv(file_name, data):
+    '''
+    Save extracted features as CSV file.
+
+        Parameters:
+            file_name (string): Name to save file as e.g 'foo.csv'
+            data (DataFrame): Data to be saved in file
+
+        Returns:
+            None
+    '''
+    data.to_csv(file_name)
+    print(f"'{file_name}' successfully saved")
