@@ -62,3 +62,8 @@ def save_as_csv(file_name, data):
     '''
     data.to_csv(file_name)
     print(f"'{file_name}' successfully saved")
+
+
+def csv_reader(file_name):
+    for row in open(file_name, 'r'):
+        yield row
