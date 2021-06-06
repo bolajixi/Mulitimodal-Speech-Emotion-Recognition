@@ -4,6 +4,8 @@
 import os
 import pickle
 
+import numpy as np
+
 
 def file_search(dirname, sub_files, skip_dir=[]):
     '''
@@ -76,6 +78,21 @@ def save_as_pickle(file_name, data):
             None
     '''
     data.to_pickle(file_name)
+    print(f"'{file_name}' successfully saved")
+
+
+def save_as_numpy(file_name, data):
+    '''
+    Save data as numpy file.
+
+        Parameters:
+            file_name (string): Name to save file as e.g 'foo.pkl'
+            data: Data to be saved in file
+
+        Returns:
+            None
+    '''
+    np.save(file_name, data)
     print(f"'{file_name}' successfully saved")
 
 
