@@ -2,7 +2,7 @@
 smile.log
 
 # model
-model/
+model/**
 
 # data
 data/
