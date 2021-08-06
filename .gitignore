@@ -1,6 +1,9 @@
 # Smile Log file
 smile.log
 
+# model
+model/
+
 # data
 data/
 data/raw
